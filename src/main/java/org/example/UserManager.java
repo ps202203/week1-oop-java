@@ -14,11 +14,13 @@ public class UserManager {
             System.out.println("1. 유저 추가");
             System.out.println("2. 전체 유저 목록 보기");
             System.out.println("3. 이름으로 유저 검색");
+            System.out.println("4. 이메일로 유저 삭제");
+            System.out.println("5. 나이 기준 필터링");
             System.out.println("0. 종료");
             System.out.print("메뉴를 선택하세요: ");
 
             int menu = scanner.nextInt();
-            scanner.nextLine(); // 개행 제거 - nextInt()는 엔터를 남겨둠.
+            scanner.nextLine(); // 개행 제거 - nextInㅋㅌt()는 엔터를 남겨둠.
 
             if (menu == 0) {
                 System.out.println("프로그램을 종료합니다.");
@@ -64,6 +66,10 @@ public class UserManager {
                 if(!found){
                     System.out.println("해당 이름을 가진 유저를 찾을 수 없습니다.");
                 }
+            } else if (menu == 4) {
+                // TODO 이메일로 유저 삭제 : 입력받은 이메일과 같은 유저를 찾아서 리스트에서 제거
+            } else if (menu == 5) {
+                // TODO 나이 기준 필터링 "나이가 20 이상인 유저만 보기" 같은 필터
             } else {
                 System.out.println("잘못된 메뉴입니다.");
             }
