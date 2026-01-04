@@ -17,20 +17,12 @@ public class User {
     public String getName() {
         return name;
     }
-    public void setName(String name) {  // 이름 변경 허용
-        this.name = name;
-    }
     public String getEmail() {
         return email;
-    }
-    // 이메일은 바꿔도 되고..
-    public void setEmail(String email) {
-        this.email = email;
     }
     public int getAge() {
         return age;
     }
-    // 나이는 읽기 전용으로 두고 setter를 안 만들 수도 있음
 
     // User의 정보 출력용 메소드
     public void printInfo(){

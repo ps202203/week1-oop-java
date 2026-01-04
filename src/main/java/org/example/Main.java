@@ -2,13 +2,13 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        User user1 = new User("철수", "chulsoo@example.com", 20);
-        User user2 = new User("영희", "younghee@exmapl.com", 22);
+        Person p = new Person("홍길동", 30);
+        p.introduce();
 
-        user1.printInfo();
-        user2.printInfo();
+        Person p2 = new Student("영희", 21, "경영학");
+        p2.introduce(); // 실제로는 Student의 introduce()가 실행됨.
 
-        user1.setName("김철수");
-        System.out.println("이름 변경 후: " + user1.getName());
+        Student s = new Student("철수", 20, "컴퓨터공학");
+        s.introduce();
     }
 }
