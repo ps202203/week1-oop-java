@@ -10,15 +10,7 @@ public class UserManager {
         List<User> users = new ArrayList<>();
 
         while(true){
-            System.out.println("==== 유저 관리 프로그램 ====");
-            System.out.println("1. 유저 추가");
-            System.out.println("2. 전체 유저 목록 보기");
-            System.out.println("3. 이름으로 유저 검색");
-            System.out.println("4. 이메일로 유저 삭제");
-            System.out.println("5. 나이 기준으로 유저 보기");
-            System.out.println("0. 종료");
-            System.out.print("메뉴를 선택하세요: ");
-
+            printMenu();
             int menu = scanner.nextInt();
             scanner.nextLine(); // 개행 제거 - nextInㅋㅌt()는 엔터를 남겨둠.
 
@@ -134,5 +126,18 @@ public class UserManager {
         }
 
         scanner.close();
+    }
+    private static void printMenu(){
+        System.out.println("==== 유저 관리 프로그램 ====");
+        System.out.println("1. 유저 추가");
+        System.out.println("2. 전체 유저 목록 보기");
+        System.out.println("3. 이름으로 유저 검색");
+        System.out.println("4. 이메일로 유저 삭제");
+        System.out.println("5. 나이 기준으로 유저 보기");
+        System.out.println("0. 종료");
+        System.out.print("메뉴를 선택하세요: ");
+    }
+    private static void addUser(Scanner scanner, List<User> users){
+
     }
 }
